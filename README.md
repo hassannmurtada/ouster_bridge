@@ -7,13 +7,12 @@ A ROS2 package that bridges Ouster LiDAR localization data to ROS topics, enabli
 This package provides:
 - **CSV TF Bridge**: Converts ouster-cli localization CSV output to ROS TF transforms and odometry
 - **Launch Files**: Orchestrates ouster-cli localization with ROS integration
-- **Dual Operation**: Allows both Ouster ROS topics (`/ouster/points`, `/ouster/imu`, etc.) and localization (`/odom`, `/tf`) to work simultaneously
+
 
 ## Features
 
 - Real-time localization pose publishing to `/odom` topic
 - TF tree broadcasting for robot localization
-- Compatible with existing Ouster ROS driver
 - CSV-based pose bridging from ouster-cli
 
 ## Dependencies
@@ -60,17 +59,6 @@ This will:
 - Bridge the pose data to ROS `/odom` topic
 - Publish TF transforms
 
-### Running with Ouster ROS Driver
-
-1. In terminal 1 (localization):
-```bash
-ros2 launch ouster_bridge localize_with_bridge.launch.py
-```
-
-2. In terminal 2 (ROS driver):
-```bash
-ros2 launch ouster_ros driver.launch.py sensor_hostname:=YOUR_SENSOR_IP
-```
 
 ### Configuration
 
@@ -112,17 +100,8 @@ ouster_bridge/
 - Ensure file permissions allow reading the CSV
 
 ### Conflicts with ROS driver
-- The package is designed to work alongside the Ouster ROS driver
-- Both should be able to connect to the sensor simultaneously in most cases
-- If issues persist, try running them sequentially
-
-## License
-
-[Add your preferred license here]
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+- The package is not designed to work alongside the Ouster ROS driver
+- Both are not able to connect to the sensor simultaneously in most cases
 
 ## Authors
 
