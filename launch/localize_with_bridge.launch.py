@@ -8,11 +8,12 @@ def generate_launch_description():
     csv_file  = '/home/hassan/live_pose.csv'
     
 
-    # CLI localization with multicast (no sensor reprogramming)
-    # Launch ouster-cli localization in unicast mode
+    # CLI localization with visualization and trajectory saving
+    # Launch ouster-cli with localization, visualization, and CSV output
     ouster_cli_cmd = ExecuteProcess(
         cmd=['/usr/local/bin/ouster-cli', 'source', sensor_ip, 
              'localize', map_file, 
+             'viz', '--global-map', map_file,
              'save_trajectory', csv_file],
         output='screen'
     )
