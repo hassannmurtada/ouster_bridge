@@ -1,6 +1,6 @@
 # Ouster Bridge
 
-A ROS2 package that bridges Ouster LiDAR localization data to ROS topics, enabling simultaneous operation of Ouster ROS driver and ouster-cli localization.
+A ROS2 package that bridges Ouster LiDAR localization data to ROS topics.
 
 ## Overview
 
