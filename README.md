@@ -7,7 +7,10 @@ A ROS2 package that bridges Ouster LiDAR localization data to ROS topics, enabli
 This package provides:
 - **CSV TF Bridge**: Converts ouster-cli localization CSV output to ROS TF transforms and odometry
 - **Launch Files**: Orchestrates ouster-cli localization with ROS integration
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7377a740670d1e3f4598f54e229c08251d067cde
 
 ## Features
 
@@ -44,7 +47,7 @@ source install/setup.bash
 1. Have an Ouster LiDAR sensor configured and accessible
 2. Create a map using ouster-cli SLAM:
 ```bash
-ouster-cli source sensor://YOUR_SENSOR_IP slam save survey.osf
+ouster-cli source YOUR_SENSOR_IP slam save survey.osf
 ouster-cli source survey.osf save map.ply
 ```
 
@@ -103,9 +106,18 @@ ouster_bridge/
 - The package is not designed to work alongside the Ouster ROS driver
 - Both are not able to connect to the sensor simultaneously in most cases
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
 ## Authors
 
-- Hassan [Your GitHub username]
+- Hassan
+
+
+## Authors
+
+- Hassan
 
 ## Acknowledgments
 
