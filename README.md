@@ -126,7 +126,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Authors
 
-- Hassan [Your GitHub username]
+- Hassan
 
 ## Acknowledgments
 
