@@ -7,10 +7,6 @@ A ROS2 package that bridges Ouster LiDAR localization data to ROS topics.
 This package provides:
 - **CSV TF Bridge**: Converts ouster-cli localization CSV output to ROS TF transforms and odometry
 - **Launch Files**: Orchestrates ouster-cli localization with ROS integration
-<<<<<<< HEAD
-
-=======
->>>>>>> 7377a740670d1e3f4598f54e229c08251d067cde
 
 ## Features
 
